@@ -5,7 +5,7 @@
 #define COL_TO 7
 
 int check(double x, double y) {
-	int state = (1 <= y <= 7) && (2 * x + 13 >= y) && (-2 * x + 15 >= y);
+	int state = (1 <= y && y <= 7) && (2 * x + 13 >= y) && (-2 * x + 15 >= y);
 	return state;
 }
 
